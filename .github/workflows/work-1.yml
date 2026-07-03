@@ -62,8 +62,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ env.OWNER_LC }}/githubAction-ex:${{ needs.makeTagAndRelease.outputs.tag_name }}
-            ghcr.io/${{ env.OWNER_LC }}/githubAction-ex:latest
+            ghcr.io/${{ env.OWNER_LC }}/githubaction-ex:${{ needs.makeTagAndRelease.outputs.tag_name }}
+            ghcr.io/${{ env.OWNER_LC }}/githubaction-ex:latest
           # 💡 팁: GitHub Actions 전용 캐시를 사용하여 빌드 속도를 비약적으로 높입니다.
           cache-from: type=gha
           cache-to: type=gha,mode=max
